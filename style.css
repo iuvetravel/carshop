@@ -1,0 +1,526 @@
+/* @import url(https://fonts.google.com/share?selection.family=Manrope:wght@300;400;700;900);*/
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 350ms;
+}
+
+body {
+  margin: 0;
+  font-family: "Spartan", sans-serif;;
+  text-align: center;
+  background: -webkit-linear-gradient(to right, #24C6AB, #2AC991);
+  background: linear-gradient(to right, #24C6AB, #2AC991);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.container {
+  width: 100%;
+  max-width: 65em;
+  margin: 0 auto;
+}
+
+.clearfix::after,
+section::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* Column system
+==================*/
+
+/* typography
+==================*/
+
+h1 {
+  font-weight: 300;
+  font-size: 1.57rem;
+  margin-top: 0.7em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.8em;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 3.8rem;
+  margin-top: 0.2em;
+}
+
+h3 {
+  font-size: 2.4em;
+  font-weight: 400;
+  margin-top: 0.1em;
+}
+
+.title {
+  font-size: 3rem;
+  color: #24C6AB;
+  padding-top: 1.5rem;
+  margin-bottom: 1.5em;
+  margin-top: 1.3em;
+  text-decoration: bold;
+}
+
+.subtle {
+  font-size: 0.40em;
+  display: block;
+  color: #24C6AB;
+}
+
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: 55rem) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
+/* Buttons
+==================*/
+
+.button {
+  display: inline-block;
+  font-size: 1.15rem;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  color: #CCF;
+  padding: .4em 1em;
+}
+
+@media (min-width: 60rem){
+  .button {
+   font-size: 1.5rem;
+  }
+}
+
+.button-small {
+  font-size:  .7rem;
+  font-weight: 700;
+}
+
+.button-accent {
+  color: #00ff6c;
+  border-radius: 0.5em;
+}
+
+.button-accent:hover, 
+.button-accent:focus {
+  background-color: #00ff6c;
+  background-blend-mode: multiply;
+  text-decoration: none;
+  color: #009B64;
+  background-color: #333333;
+  border-color: #009B64;
+}
+
+.button-dark {
+  color: #333333;
+  border-radius: 0.5em;
+  margin-bottom: 2em;
+}
+
+.button-dark:hover, 
+.button-dark:focus {
+  text-decoration: none;
+  background-color: #333333;
+  background-blend-mode: multiply;
+  background-color: #333333;
+  border-color: #00ff6c;
+  color: #009B64;
+}
+
+/* Header
+==================*/
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  padding-top: 5px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background-color: #232323;
+  background-repeat: auto;
+}
+
+/* Style the header */
+.header {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+  background: #232323;
+  background-color: #232323;  
+  position: absolute;
+  z-index:20;
+}
+
+
+.header {
+  margin: 0px;
+  padding: 0px;
+  background: #232323;
+  background-color: #232323;  
+  position: absolute;
+  display: inline;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+@media (max-width:375px) {
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding-top: 5px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background-color: #232323;
+  background-repeat: auto;
+
+}
+
+.header {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+  background: #232323;
+  background-color: #232323;  
+  position: absolute;
+  z-index:20;
+}
+
+
+.header {
+  margin: 0px;
+  padding: 0px;
+  background: #232323;
+  background-color: #232323;  
+  position: absolute;
+  display: inline;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+}
+
+
+/*--------------------------*/
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1em;
+  text-decoration-color: #009B64;
+}
+
+nav a {
+  font-weight: bolder;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 0.70rem;
+  padding: 0.1em;
+  color: #CCF;
+}
+
+nav a:hover {
+  color: #24C6AB; 
+  text-decoration: ; 
+  font-weight: 900;
+}
+
+@media (min-width: 55rem) {
+  .logo {
+    float: left;
+    padding-left: 1rem;
+    padding-top: .3rem;
+  }
+
+  nav {
+    float: right;
+  }
+}
+
+
+/* Home hero
+================*/
+
+.home-hero {
+  background-image: url('./img/hero-bg1.jpg');
+  padding: 6em 0;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #444444;
+}
+
+.home-about-textbox {
+  background-color: #232323;
+  color: #FFF;
+  padding: 4em;
+  width: 101vw;
+  margin-left: -2.7%;
+  outline: 1px solid #00ff6c;
+  outline-offset: -2.7em;
+  position: relative;
+  border-radius: 1em;
+  
+}
+
+.home-about-textbox h1 {
+  color: #00ff6c;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0.45em;
+  background-color: #232323;
+  padding: 0 .1em;
+}
+
+@media (min-width: 60rem) {
+  .title {
+    font-size: 5rem;
+  }
+
+.home-about {
+  background-image: url(./img/who-we-are.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2em;
+}
+
+.home-about-textbox {
+  width: 40%;
+  margin-left: -2.5%;
+  top: -8em;
+  left: -3em;
+  text-align: left;
+  -webkit-box-shadow: 11px 12px 32px -9px rgba(79,87,80,1);
+  -moz-box-shadow: 11px 12px 32px -9px rgba(79,87,80,1);
+  box-shadow: 11px 12px 32px -9px rgba(79,87,80,1);
+
+}
+}
+
+
+/* Portfolio
+==================*/
+
+.portfolio {
+  margin: 3em 0 0;
+}
+
+.port-item {
+  margin: 0;
+  position: relative;
+}
+
+.port-item img {
+  display: block;
+}
+
+.port-desc {
+  position: absolute;
+  z-index: 100;
+  bottom: 0em;
+  left: 0em;
+  right: 0em;
+  color: white;
+  background: rgba(0,0,0,.50);
+  padding-bottom: 2em;
+}
+
+.port-desc p {
+  margin: 1em;
+}
+
+@media (min-width: 37rem) {
+  .port-item {
+    width: 50%;
+    float: left;
+    margin: 0;
+
+  }
+
+}
+
+@media (min-width: 60rem) {
+  .port-item {
+    width: 33.3333334%;
+    overflow: hidden;
+  }
+
+  .port-desc {
+    transform: translateY(150%);
+  }
+
+  .port-item:hover .port-desc {
+    transform: translateY(0%);
+  }
+
+}
+
+/* CTA
+==================*/
+
+.cta {
+  padding-top: 3em;
+  color: white;
+  background: -webkit-linear-gradient(to right, #24C6AB, #2AC991);
+  background: linear-gradient(to right, #24C6AB, #2AC991);
+  min-height: 50vh;
+}
+
+.grid {
+  display: grid;
+  padding-top: .5em;
+  background-color: #fff;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  grid-gap: 1rem;
+}
+
+/* Footer
+==================*/
+
+
+.footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color: #ffffff;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#009B64;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  color: #fff;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+
+
+
